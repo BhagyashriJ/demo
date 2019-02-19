@@ -1,14 +1,443 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    //Login
+    "signIn" : "Registrarse",
+    "Forgotpassword" : "Se te olvidó tu contraseña" ,
+    "userName" :  "Nombre de usuario" ,
+    "password" : "Contraseña" ,
+    "secureOTP" : "Secure OTP",
+    "disclaimer" : "Renuncia" ,
+    "disclaimerText" : "¡ADVERTENCIA! ¡USO AUTORIZADO SOLAMENTE! Esta computadora y su contenido son propiedad de The Western Union Company o sus subsidiarias y pueden contener información de propiedad y confidencial. La autorización de acceso es otorgada por un administrador según las políticas y procedimientos corporativos aplicables. Cualquier acceso no autorizado o uso no autorizado de esta computadora, sus contenidos o la red de Western Union están estrictamente prohibidos. Los recursos de la empresa se proporcionan con fines comerciales y, como tales, están sujetos al Código de conducta de Western Union, a la Política de uso aceptable de seguridad de la información de Western Union, a otras políticas y procedimientos de Western Union y a las leyes aplicables. Donde sea permisible, se puede acceder a su computadora, correo electrónico y unidades de red y sus actividades pueden ser monitoreadas y / o grabadas. El uso de esta computadora constituye su consentimiento a dicho acceso, monitoreo y / o registro y su acuerdo para cumplir con las políticas, procedimientos y leyes aplicables.",
+    "copyRight" : "2017 Western Union Holdings, Inc. Todos los derechos reservados",
+    "bestViwed" : "Sitio mejor visto en IE 10.0+, Chrome 54.0+, Firefox 50.1.0+",
+
+    //Login Screen Error Messages
+    "usernameErrorMsg" : "Por favor ingrese el nombre de usuario",
+    "passwordErrorMsg" : "Por favor ingrese contraseña",
+    "secureOtpErrorMsg" : "Por favor ingrese Simbólico",
+    
+    //Burger Menu : Analysis
+    "analysis" : "Análisis",
+    "dashboards" : "Dashboards",
+    "transactionAnalysis" : "Transacción Análisis",
+    "consumerSearch" : "Consumidor Buscar",
+    "consumerComplaints" : "Consumidor Quejas",
+    
+
+    //Burger Menu : Administration
+    "administration" : "Administración",
+    "userManagement" : "Usuario Administración",
+    "configurationCriteria" : "Configuración Criterios",
+    "efrCountries" : "EFR Países",
+    "agentNotification" : "Notificaciones del agente & Quejas",
+    "complaintsNotSent" : "Quejas no enviadas",
+    "auditLog" : "Auditoría Registros",
+    "schedulerLog" : "Planificador Registros",
+
+
+
+    //Profile Menu
+    "myProfile" : "Mi Perfil",
+    "changePassword" : "Cambio Contraseña",
+    "logout" : "Cerrar Sesión",
+
+    //Filter    
+    "filterOptions" : "Filtrar Opciones ",
+    "selectFilter" : "Seleccionar Filtrar ",
+    "filterName" : "Filtrar Título ",
+    "side" : "Lado ",
+    "sender" : "Remitente",
+    "receiver" : "Receptor",
+    "timePeriod" : "Periodo de Tiempo",
+    "mtcn" : "MTCN",
+    "addMTCN" : "Entrar MTCN",
+    "amount" : "Cantidad",
+    "type" : "Tipo",
+    "minValue" : "Valor Mínimo",
+    "to" : "A",
+    "from" : "De",
+    "maxValue" : "Valor Máximo",
+    "country" : "País",
+    "consumer" : "Consumidor",
+    "name" : "Nombre",
+    "searchEntity" : "Buscar Entity",
+    "startDate" : "Inicio Fecha",
+    "endDate" : "Final Fecha",
+    "addCountry" : "Entrar País",
+    "level" : "Nivel",
+    "levelAgent" : "Agente",
+    "levelLocation" : "Ubicación", 
+    "levelCountry": "País",  
+    "levelLogType": "Registros Tipo",
+    "levelUser": "Usuario",
+    "applyButton" : "Aplicar",
+    "clearButton" : "Limpiar",
+    "cancelButton" : "Cancelar",
+    "localPrincipalAmount" : "Local Cantidad Principal",
+    "usPrincipalAmount" : "US Cantidad Principal",
+    "firstName" : "Primer Nombre",
+    "lastName" : "Apellido",
+    "fullName" : "Nombre Completo",
+    "complaintReport" : "Mes de Queja de Fraude",
+    "complaintReportDate" : "Queja Informe Fecha",
+    "agentSearchBy": "Agente Búsqueda por ",
+    "agentID": "Agente ID",
+    "agentIDText" : "Cuenta ID/ Red ID/ Empresa ID",
+    "agentUserID" : "Agente Usuario ID",
+    "agentUserIDText" : "agentemail@domain.com", 
+    "agentIdOr" : "O",
+    "auditLogAction" : "Acción",
+    "selectAuditLogAction" : "Seleccionar Acción",
+    "selectFraudMonth" : "Seleccionar Mes",
+    "agentNotifAction" : "Agente Notificacione",
+    "consCompAction" : "Consumidor Quejas",
+    "auditLogUserId" : "Usuario ID",
+    "selectAction" : "Seleccionar Acción",
+    
+
+    //Filter Tooltips 
+    "addFilter" : "Añadir filtro",
+    "deleteFilter": "Eliminar filtro",
+    "saveFilter" : "Guardar Filter",
+    "filterAgentHierarchy": "Jerarquía del agente de filtro",
+
+    //Filter error messages
+    "filterNameErrorMsg" : "El nombre del filtro debe contener solo alfabetos.",
+    "filterNameLenErrorMsg" : "El nombre del filtro debe contener un máximo de " + maxLength.filterName + " caracteres.",
+    "saveFilterMsg" : "Por favor ingrese el nombre del filtro.",
+    "sideMsg" : "Lado es obligatorio.",
+    "startDateMsg" : "La fecha de inicio es obligatoria.",
+    "endDateMsg" : "La fecha de finalización es obligatoria.",
+    "amountValPosErrorMsg" : "El valor debe ser positivo.",
+    "amountMinMaxErrorMsg" : "El valor máximo debe ser mayor que el valor mínimo.",
+    "amountMaxErrorMsg" : "El valor máximo es obligatorio.",
+    "countryNameErrorMsg" : "Por favor ingrese un nombre de país válido.",
+    "countryLoadingErrorMsg" : "Error al cargar países.",
+    "mtcnErrorMsg" : "MTCN debe ser un número de 10 dígitos solamente",
+    "consNameErrorMsg" : "El nombre del consumidor debe contener solo alfabetos.",
+    "consNameLenErrorMsg" : "El nombre del consumidor debe contener un máximo de " + maxLength.consumerName + " caracteres.",
+    "filterInvalidEmailError" : "ID de correo electrónico no válido.",
+    "agentIDErrorMsg": "La identificación del agente debe ser alfanumérica solamente.",
+
+    //Forgot password
+    "emailLabel" : "Ingrese su correo electrónico (identificación de usuario) y le enviaremos un enlace para restablecer su contraseña.*",
+    "confirmButton" : "Confirmar",
+    "invalidEmailError" : "ID de correo electrónico no válido.",
+    "invalidEmailLenError" : "La longitud del correo electrónico no debe ser más de " + maxLength.emailId + " caracteres.",
+    "qaLabel" : "Por favor responde tu pregunta secreta",
+    "answerError" : "La respuesta debe ser alfanumérica solamente.",
+    "resetPassButton" : "Reiniciar Contraseña",
+    "" : "",
+
+    //breadcrum
+    "level1" : "Casa",
+    "level2Dashboard" : "Dashboards",
+    "level2Trans" : "Transacción Análisis",
+    "level2Cons" : "Consumidor Buscar",
+    "level2ConsComp" : "Consumidor Quejas",
+    "level2CompNotSent" : "Quejas no enviadas",
+    "level2AuditLog" : "Auditoría Registros",
+    "level2SchedulerLog" : "Planificador Registros",
+    "level2Config" : "Configuración Criterios",
+    "level2Efr" : "EFR Países",
+    "level2AgentNotification" : "Notificaciones del agente & Quejas",
+    "level2UserManage" : "Usuario Administración",
+    "level2Activity" : "Actividad Auditoría Registros",
+    "level2ChangePass" : "Cambia Contraseña",
+    "level2ResetPass" : "Reiniciar Contraseña",
+    "level2SecurityQA" : "Seguridad Preguntas y Respuesta",
+    "level2ForgotPass" : "Olvidó Contraseña",
+    "level2MyProfile" : "Mi Perfil",
+    "level2EditUser" : "Editar Usuario",
+    "level2AddUser" : "Agregar Usuario",
+    "filterButton" : "Filtrar",
+    "downloadButton" : "Descargar",
+    "exportAll" : "Exportar todos los datos a CSV.",
+    "exportVisible" : "Exportar datos visibles a CSV",
+    "exportSelected" : "Exportar datos seleccionados a CSV",
+    "viewComplaints" : "Ver Quejas",
+
+
+    //change password
+    "oldPass" : "Contraseña Anterior",
+    "newPass" : "Nueva Contraseña",
+    "confirmPass" : "Confirmar Contraseña",
+    "changePassButton" : "Cambia Contraseña",
+    "passDisclaimer" : "La contraseña debe incluir:",
+    "passChar" : " 8 - 64 caracteres",
+    "passCapital" : " Al menos una mayúscula",
+    "passNumber" : " Al menos un número",
+    "passSpecialChar" : " Al menos un personaje especial",    
+    "passNoSpace" : " No hay espacios",
+    "badPass" : "Contraseña Incorrecta",
+    "passLenError" : "La longitud de la contraseña no debe ser más de " + maxLength.password + " caracteres.",
+    "samePassUserIdError" : "La contraseña no debe ser la misma que la ID de inicio de sesión.",
+    "diffPassError" : "Estas contraseñas no coinciden.",
+    "setPassButton" : "Establecer Contraseña",
+    "" : "",
+    "" : "",
+
+    //question answer
+    "securityQA" : "Por favor configure sus 2 preguntas secretas*",
+    "answerLenError" : "La respuesta debe contener un máximo de " + maxLength.answer + " caracteres.",
+    "selectDropDown" : "Seleccionar",    
+    "answer" : "Responder",
+    "" : "",
+    "" : "",
+
+    //add edit config criteria
+    "addCriteriaTitle" : "Agregar Criterios de Búsqueda de Consumidores",
+    "editCriteriaTitle" : "Editar los criterios de búsqueda del consumidor",
+    "action" : "Acción",
+    "operation" : "Operación",
+    "attribute" : "Atributo",
+    "aggregation" : "Agregación",
+    "attributeVal" : "Valor de Atributo",
+    "frequency" : "Frecuencia",
+    "saveButton" : "Salvar",
+    "attrValError" : "El valor del atributo debe ser positivo.",
+    "attrValDecError" : "El valor del atributo no puede tener entrada decimal.",
+    "errorMsgCount" : " no puede tener Contar como agregación.",
+    "errorMsgSum" : " no puede tener Suma como agregación.",
+
+
+    //delete criteria
+    "deleteCriteriaConfirm" : "Estás seguro de que deseas eliminar los criterios de búsqueda del consumidor seleccionados?",
+    "deleteButton" : "Eliminar",
+    "deleteCriteriaTitle" : "Eliminar los criterios de búsqueda del consumidor",
+
+    //Config criteria tool tips
+    "editCriteria" : "Editar Criterios",
+    "addCriteria" : "Agregar Criterios",
+    "deleteCriteria" : "Eliminar Criterios",
+    
+    //Transaction Analysis 
+    "trLabelShowing" : "Demostración",
+    "trLabelTrFrom" : "transacciones de",
+    "trLabelTrTo" : "a",
+    "trMaxResultMsg" : "Máximos registros mostrados, el resultado puede ser truncado",
+
+    //Dashboard 
+    "tabSend": "Enviar",
+    "tabReceive" : "Recibir",
+    "tabConsumer" : "Consumidor",
+    "tabFATF" : "GAFI",
+    "sendTtip" : "Las 10 principales transacciones de envío",
+    "receiveTtip" : "Las 10 mejores transacciones de recepción",
+    "consumerTtip" : "Los 10 principales consumidores",
+    "FATFTtip" : "Enviar y recibir las tendencias de transacción a los países del GAFI (Grupo de Acción Financiera)",
+    "dashboardTitleShowingResult" : "Mostrando resultados de",
+    "dashboardTitleTo" : "a",
+    "dashboardtotalCount" : "Cuenta total",
+    "dashboardtotalAmount" : "Cantidad total",
+    "dashboardNoDataMsg" : "Informacion no disponible.",
+    "dashboardTitleFor": "por",
+
+    "firstRowTitleSend" : "Los 10 principales envíos a los países",
+    "firstRowTitleReceive" : "Los 10 mejores receptores de países",
+    "firstRowTitleConsumer" : "Los 10 principales consumidores de envío",
+    "firstRowTitleFATF" : "Enviar tendencias a los países del GAFI",
+
+    "firstRowleftchartTitleSend" :  "10 mejores países receptores según recuento de transacciones",                 
+    "firstRowleftchartTitleReceive" :  "10 mejores enviando países según recuento de transacciones",
+    "firstRowleftchartTitleConsumer" :  "10 mejores enviando consumidores según recuento de transacciones",
+    "firstRowleftchartTitleFATF" :  "Enviar tendencias a los países del GAFI según recuento de transacciones",
+    
+    "firstRowrightchartTitleSend" : "10 mejores países receptores de acuerdo a la cantidad",
+    "firstRowrightchartTitleReceive" :  "10 mejores enviando países de acuerdo a la cantidad",
+    "firstRowrightchartTitleConsumer" : "10 mejores enviando consumidores de acuerdo a la cantidad",
+    "firstRowrightchartTitleFATF" : "Enviar tendencias a los países de acuerdo a la cantidad",
+                                    
+    "secondRowTitleSend" : "10 mejores enviando ubicaciones",
+    "secondRowTitleReceive" : " 10 mejores lugares de recepción",
+    "secondRowTitleConsumer" : "10 mejores recibiendo consumidores",
+    "secondRowTitleFATF" : "Reciba tendencias de los países del GAFI",
+                            
+    "secondRowleftchartTitleSend" : "10 mejores enviando ubicaciones según recuento de transacciones",
+    "secondRowleftchartTitleReceive" : "10 mejores lugares de recepción según recuento de transacciones",
+    "secondRowleftchartTitleConsumer" : "10 mejores recibiendo consumidores según recuento de transacciones",
+    "secondRowleftchartTitleFATF" : "Reciba tendencias de los países del GAFI según recuento de transacciones",
+
+    "secondRowrightchartTitleSend" : "10 mejores enviando ubicaciones de acuerdo a la cantidad",
+    "secondRowrightchartTitleReceive" : "10 mejores lugares de recepción de acuerdo a la cantidad",
+    "secondRowrightchartTitleConsumer" : "10 mejores recibiendo consumidores de acuerdo a la cantidad",
+    "secondRowrightchartTitleFATF" : "Reciba tendencias de los países del GAFI de acuerdo a la cantidad",
+
+    "networkFirstRowTitleSend" : "Los 10 mejores de las cuentas de envío",
+    "networkFirstRowTitleReceive" : "Los 10 mejores de las cuentas de recepción",
+    "networkFirstRowTitleConsumer" : "Los 10 principales de los consumidores de envío",
+    "networkFirstRowTitleFATF" : "Enviar tendencias a los de países del GAFI",
+
+    "networkfirstRowleftchartTitleSend" : "Las 10 principales cuentas de envío por recuento de transacciones",
+    "networkfirstRowleftchartTitleReceive" : "Las 10 principales cuentas de recepción por recuento de transacciones",
+    "networkfirstRowleftchartTitleConsumer" : "Los 10 principales consumidores de envío por recuento de transacciones",
+    "networkfirstRowleftchartTitleFATF" : "Enviar tendencias a los países del GAFI por recuento de transacciones",
+
+    "networkfirstRowrightchartTitleSend" : "Las 10 principales cuentas de envío por montos",
+    "networkfirstRowrightchartTitleReceive" : "Las 10 cuentas más importantes por montos",
+    "networkfirstRowrightchartTitleConsumer" : "Los 10 principales consumidores de envío por cantidades",
+    "networkfirstRowrightchartTitleFATF" : "Enviar las tendencias a los países del GAFI por cantidad",
+
+    "networksecondRowTitleSend" : "Las 10 mejores ubicaciones de envío",
+    "networksecondRowTitleReceive" : "Las 10 mejores ubicaciones de recepción",
+    "networksecondRowTitleConsumer" : "Los 10 principales consumidores de recepción",
+    "networksecondRowTitleFATF" : "Reciba tendencias de los países del GAFI",
+
+    "networksecondRowleftchartTitleSend" : "Las 10 ubicaciones principales de envío por recuento de transacciones",
+    "networksecondRowleftchartTitleReceive" : "Las 10 mejores ubicaciones de recepción por recuento de transacciones",
+    "networksecondRowleftchartTitleConsumer" : "Los 10 principales consumidores de recepción por recuento de transacciones",
+    "networksecondRowleftchartTitleFATF" : "Reciba las tendencias de los países del GAFI por recuento de transacciones",
+
+    "networksecondRowrightchartTitleSend" : "Las 10 principales ubicaciones de envío por cantidades",
+    "networksecondRowrightchartTitleReceive" : "Las 10 mejores ubicaciones de recepción por montos",
+    "networksecondRowrightchartTitleConsumer" : "Los 10 principales consumidores de recepción por montos",
+    "networksecondRowrightchartTitleFATF" : "Reciba las tendencias de los países del GAFI por cantidad",
+
+    "networkthirdRowTitleSend" : "Top 10 Enviar a Países por ",
+    "networkthirdRowTitleReceive" : "Los 10 mejores receptores de países para ",
+    
+
+    "networkthirdRowleftchartTitleSend" : "Los 10 principales envíos a países según el recuento de transacciones",
+    "networkthirdRowleftchartTitleReceive" : "Los 10 principales receptores de países por recuento de transacciones",
+   
+
+    "networkthirdRowrightchartTitleSend" : "Los 10 principales envíos a países por importes",
+    "networkthirdRowrightchartTitleReceive" : "Los 10 principales receptores de países por montos",
+
+    //user management tooltips
+    "editUser" : "Editar Usuario",
+    "deactivateUser" : "Desactivar Usuario",
+    "addUser" : "Agregar Usuario",
+    "uploadUserTooltips" : "Subir usuarios",
+
+     // User Management UM
+     "UMshowAll":"Mostrar todo",
+     "UMactive":"Activo",
+     "UMinactive":"Inactivo",
+     "UMnotCreated":"No creado",
+
+    //Upload User UU
+    "UUtitle" : "Subir contactos de agente",
+    "UUbrowse" : "Vistazo",
+    "UUfileFormat": "Utilice el formato de archivo de Excel",
+    "UUdownload": "Haga clic para descargar el archivo de muestra",
+    "UUresultSuccess" : "Resultado: Cargado Correctamente:",
+    "UUresultFailed" : "Ha Fallado:",
+    "UUbuttonUpload" :"Subir",
+    "UUbuttonCancel" :"Cancelar",
+    "UUbuttonDownloadReport" : "Descargar informe",
+
+    //add/edit user
+    "userProfileTitle" : "Perfil del Usuario",
+    "selectCountry" : "Seleccionar País",
+    "selectUserType" : "Seleccionar Tipo de Usuario",
+    "contractorID" : "Id del Contratista",
+    "userID" : "ID de usuario * (correo electrónico)",
+    "reUserID" : "Volver a escribir Id De usuario (correo electrónico)",
+    "userFirstName" : "Nombre de pila*",
+    "userMiddleName" : "Segundo nombre",
+    "userLastName" : "Apellido*",
+    "phoneNum" : "Número de teléfono",
+    "fax" : "Fax",
+    "selectStatus" : "Seleccione el estado del usuario*",
+    "agentEntityTitle" : "Nivel Entidad Agente",
+    "permissionTitle" : "Permisos",
+    "selectEntity" : "Seleccione la Entidad",
+    "searchEntity" : "Entidad de búsqueda",
+    "maxEntity" : "¡Puedes seleccionar un máximo de 20 entidades solamente!",
+    "userStatusChange" : "El estado del usuario no se puede cambiar a ",
+    "uploadUsersError" : "Por favor cargue el archivo no vacío.",
+
+ 
+  //add/edit user error msgs
+    "userIDError" : "ID de usuario debe ser alfanumérica solamente.",
+    "diffUserIdError" : "Estos ID de usuario no coinciden.",
+    "firstNameError" : "El primer nombre debe contener solo alphabates.",
+    "firstNameLenError" : "El nombre debe contener un máximo de " + maxLength.userName + " alphabates.",
+    "middleNameError" : "El segundo nombre debe contener solo alphabates.",
+    "lastNameError" : "El apellido debe contener solo alphabates.",
+    "middleNameLenError" : "El segundo nombre debe contener un máximo de " + maxLength.userName + " alphabates.",
+    "lastNameLenError" : "Apellido debe contener un máximo de " + maxLength.userName + " alphabates.",
+    "phoneError" : "El número de teléfono debe contener solo dígitos.",
+    "phoneLenError" : "El número de teléfono debe contener un máximo de " + maxLength.phone + " dígito.",
+    "faxError" : "El fax debe contener solo dígitos.",
+    "faxLenError" : "El fax debe contener un máximo de " + maxLength.fax + " dígitos.",
+
+    //add WU user popup
+    "addWUUserTitle" : "Agregue sus credenciales",
+    "empId" : "ID de empleado",
+    "otp": "Seguro OTP",
+
+
+    //growl notifications
+    "success" : "Éxito!",
+    "changePassSuccess" : "Contraseña cambiada con éxito.",
+    "resetPassEmail" : "Acabamos de enviarle un correo electrónico con un enlace para configurar su nueva contraseña.",
+    "serverErrorMsg" : "Error de servidor interno",
+    "qaSetupSuccess" : "Su pregunta y respuesta secretas se establecieron con éxito.",
+    "resetPassSuccess" : "Restablecimiento de contraseña exitosamente.",
+    "fieldConfigForCountry" : "Las configuraciones de campo no están disponibles para el país de este usuario.",
+    "selectCriteria" : "Por favor, seleccione los criterios!",
+    "addNewCriteria" : "Por favor agregue criterios!",
+    "filterDeleteSuccess" : "Filtro eliminado con éxito.",
+    "filterAddSuccess" : "Filtro agregado con éxito.",
+    "filterUpdateSuccess" : "Filtro actualizado con éxito.",
+    "userInactiveSuccess" : "Usuario inactivado exitosamente.",
+    "userUpdateSuccess" : "Usuario actualizado con éxito.",
+    "incorrectCred" : "El nombre de usuario o contraseña son incorrectos",
+    "userAddSuccess" : "Usuario agregado con éxito. <br> <br> El correo electrónico de verificación se envió a la cuenta de correo electrónico del usuario.",
+    "entityReqError" : "Seleccione al menos una entidad para guardar ",
+
+
+    //add edit criteria drop down values
+    "sending" : "Enviando",
+    "receiving" : "Receptación",
+    "greaterEq" : "Mayor qué o igual a",
+    "lessEq" : "Menos que o igual a",
+    "eq" : "Igual a",
+    "count" : "Contar",
+    "sum" : "Suma",
+    "perDay" : "Por Día",
+    "perMon" : "Por Mes",
+    "perQaur" : "Por Cuarto",
+    "" : "",
+
+    //delete user dialogue 
+    "inUserTitle" : "Desactivar Usuario",
+    "inUserConfirm" : "Seguro que quieres desactivar al usuario seleccionado",
+    "okButton" : "De Acuerdo",
+    "inUserErrorMsg1" : "Seleccione solo usuario activo",
+    "inUserErrorMsg2" : " para hacer inactivo.",
+
+    //delete filter template
+    "deleteTempTitle" : "Eliminar Plantilla",
+    "deleteTempConfirm" : "Seguro que quieres eliminar la plantilla de filtro?",
+
+
+    //EFR Country Rule
+    "addEfrCountryTitle" : "Añadir una regla de país de riesgo de fraude elevado",
+    "efrCountry" : "País",
+    "efrStartDate" : "Inicio Fecha",
+    "efrStatus" : "Estado",
+    "editEfrCountryTitle" : "Editar una regla de país de riesgo de fraude elevado",
+    "selectStatus" : "Seleccionar Estado",
+    
+
+    //EFR breadcrum tool tips
+    "editRule" : "Editar país",
+    "addRule" : "Añadir país",
+
+    // Consumer Complaints CC
+    "CCcomplaintsIn": "quejas en",
+    "CCfor":"para",
+    "CCsend":"Enviar",
+    "CCpay":"Paga",
+
+    // Complaints Not Sent CNS
+    "CNScomplaintsIn": "quejas en",
+
+    // EFR Country EFR
+    "EFRactivatedEFRCountry":"Países EFR activos:",
+
+    "GFdisclaimer":"DESCARGO DE RESPONSABILIDAD: INFORMACIÓN PRIVILEGIADA, CONFIDENCIAL Y COMERCIAL DE WESTERN UNION, SECRET. DIVULGACIÓN POSTERIOR PROHIBIDA. WESTERN UNION RESTRICTED."
+
 }
