@@ -1,5 +1,5 @@
 {
-    //Login
+  
     "signIn" : "Registrarse",
     "Forgotpassword" : "Se te olvidó tu contraseña" ,
     "userName" :  "Nombre de usuario" ,
@@ -9,13 +9,8 @@
     "disclaimerText" : "¡ADVERTENCIA! ¡USO AUTORIZADO SOLAMENTE! Esta computadora y su contenido son propiedad de The Western Union Company o sus subsidiarias y pueden contener información de propiedad y confidencial. La autorización de acceso es otorgada por un administrador según las políticas y procedimientos corporativos aplicables. Cualquier acceso no autorizado o uso no autorizado de esta computadora, sus contenidos o la red de Western Union están estrictamente prohibidos. Los recursos de la empresa se proporcionan con fines comerciales y, como tales, están sujetos al Código de conducta de Western Union, a la Política de uso aceptable de seguridad de la información de Western Union, a otras políticas y procedimientos de Western Union y a las leyes aplicables. Donde sea permisible, se puede acceder a su computadora, correo electrónico y unidades de red y sus actividades pueden ser monitoreadas y / o grabadas. El uso de esta computadora constituye su consentimiento a dicho acceso, monitoreo y / o registro y su acuerdo para cumplir con las políticas, procedimientos y leyes aplicables.",
     "copyRight" : "2017 Western Union Holdings, Inc. Todos los derechos reservados",
     "bestViwed" : "Sitio mejor visto en IE 10.0+, Chrome 54.0+, Firefox 50.1.0+",
-
-    //Login Screen Error Messages
     "usernameErrorMsg" : "Por favor ingrese el nombre de usuario",
     "passwordErrorMsg" : "Por favor ingrese contraseña",
     "secureOtpErrorMsg" : "Por favor ingrese Simbólico"
-    
-
- 
- 
+     
 }
