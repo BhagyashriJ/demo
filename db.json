@@ -1,4 +1,5 @@
 {
+"sp_translations": {
     "signIn" : "Registrarse",
     "Forgotpassword" : "Se te olvido tu contrasena" ,
     "userName" :  "Nombre de usuario" ,
@@ -11,5 +12,5 @@
     "usernameErrorMsg" : "Por favor ingrese el nombre de usuario",
     "passwordErrorMsg" : "Por favor ingrese contraseña",
     "secureOtpErrorMsg" : "Por favor ingrese Simbólico"
-     
+    }
 }
